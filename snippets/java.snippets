@@ -77,9 +77,13 @@ snippet el
 snippet eif
 	else if (${1}) ${0}
 snippet if
-	if (${1}) ${0}
+	if (${1}) 
+	{
+	${0}
+	}
 snippet sw
-	switch (${1}) {
+	switch (${1}) i
+	{
 		${0}
 	}
 ##
@@ -209,17 +213,25 @@ snippet warn
 snippet enfor
 	for (${1} : ${2}) ${0}
 snippet for
-	for (${1}; ${2}; ${3}) ${0}
+	for (${1}; ${2}; ${3}) 
+	{
+		${0}
+	}
 snippet wh
-	while (${1}) ${0}
+	while (${1}) 
+	{
+		${0}
+	}
 ##
 ## Main method
 snippet psvm
-	public static void main (String[] args) {
+	public static void main (String[] args)
+	{
 		${0}
 	}
 snippet main
-	public static void main (String[] args) {
+	public static void main (String[] args)
+	{
 		${0}
 	}
 ##
